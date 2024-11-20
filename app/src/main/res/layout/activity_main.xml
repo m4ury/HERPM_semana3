@@ -7,48 +7,65 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editName"
-        android:layout_width="286dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="65dp"
-        android:autofillHints="name"
-        android:hint="@string/edit_hint_name"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/buttonShow"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="129dp"
+            android:layout_marginBottom="83dp"
+            android:text="@string/button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editName" />
 
-    <EditText
-        android:id="@+id/editCount"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:autofillHints="Solo numeros"
-        android:hint="@string/edit_hint_count"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editName" />
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="286dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="364dp"
+            android:autofillHints="name"
+            android:hint="@string/edit_hint_name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/buttonShow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/dateView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/date_text"
-        app:layout_constraintTop_toBottomOf="@id/editCount"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        <EditText
+            android:id="@+id/editCount"
+            android:layout_width="175dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="173dp"
+            android:layout_marginEnd="118dp"
+            android:layout_marginBottom="32dp"
+            android:autofillHints="Solo numeros"
+            android:hint="@string/edit_hint_count"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/dateView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editName" />
 
-    <Button
-        android:id="@+id/buttonShow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/button_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dateView" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="143dp"
+            android:layout_marginBottom="171dp"
+            android:text="@string/date_text"
+            app:layout_constraintBottom_toTopOf="@+id/buttonShow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editCount" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

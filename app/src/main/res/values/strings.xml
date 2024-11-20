@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mauricio_Morales_20241111</string>
+    <string name="app_name">Mauricio_Morales_20241111_semana3</string>
     <string name="button_text">Mostrar Reserva</string>
     <string name="edit_hint_name">Nombre de la persona responsable</string>
     <string name="edit_hint_count">Número de personas</string>
